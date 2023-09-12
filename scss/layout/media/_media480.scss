@@ -1,0 +1,29 @@
+@media(max-width: 30rem) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menuBurger {
+            img {
+                display: block;
+            }
+            
+        }
+
+        .navbar li a {
+            display: none;
+        }
+            .logo {
+                display: flex;
+                display: inline;
+                text-align: center;
+            }
+        div {
+            img{
+               display: inline;
+               text-align: center;
+            }
+        }
+    }
+}

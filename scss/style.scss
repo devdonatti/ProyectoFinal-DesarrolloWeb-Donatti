@@ -1,0 +1,19 @@
+
+/*1ero llamamos variables y los mixins*/
+@import"./base/typo";
+@import"./utilities/variables";
+
+/*2do llamamos al reset*/
+
+@import"./base/reset";
+
+/*3ero llamamos a los layout*/
+@import"./layout/header";
+
+/*4to llamamos a los componentes*/
+@import"./components/cards";
+
+/*5to a los media querrys */
+
+@import "./layout/media/media1024"
+

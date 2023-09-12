@@ -1,0 +1,24 @@
+.nav-item {
+    a{
+        font-family: $fuente-principalcolor;
+                    text-decoration: none;
+                    color: black;
+                    font-size: 1.25rem;
+                    letter-spacing: .125rem;
+                    list-style: none;
+                    }
+                    }
+                    
+li{
+    img {
+        list-style: none;
+    }
+}
+
+.navbar-nav {
+    .nav-item {
+        .nav-link {
+            padding: 1.5625rem;
+        }
+    }
+}
