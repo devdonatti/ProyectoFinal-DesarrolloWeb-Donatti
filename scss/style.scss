@@ -9,7 +9,7 @@
 
 /*3ero llamamos a los layout*/
 @import"./layout/header";
-@import"../pages/contacto.html";
+@import"./layout/main";
 
 
 
@@ -19,5 +19,7 @@
 
 /*5to a los media querrys */
 
-@import "./layout/media/media1024"
-
+@import "./layout/media/media1024";
+@import "./layout/media/media768";
+@import "./layout/media/media480";
+@import "./layout/media/media320";

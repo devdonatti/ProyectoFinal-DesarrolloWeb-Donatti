@@ -1,28 +1,26 @@
-@media(max-width: 320) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+@media screen and (max-width: 320px) {
+    main {
+        .carousel-inner {
+            .d-block {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
 
-        .menuBurger {
-            img {
-                display: block;
             }
-            
-        }
 
-        .navbar li a {
-            display: none;
-        }
-            .logo {
-                display: flex;
-                display: inline;
-                text-align: center;
-            }
-        div {
-            img{
-               display: inline;
-               text-align: center;
+            .carousel-item {
+                height: 100vh;
+                min-height: 18.75rem;
+
+                .carousel-caption {
+                    bottom: 13.75rem;
+                    z-index: 2;
+
+                    h1 {
+                        font-size: 50px;
+                        text-transform: uppercase;
+                    }
+                }
             }
         }
     }

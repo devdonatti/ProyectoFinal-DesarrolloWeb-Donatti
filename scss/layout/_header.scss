@@ -1,7 +1,15 @@
 /*Modificaciones realizadas en barra de navegacion con bootstrap */
+header{
+    .container-fluid {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    }
+    
 .nav-item {
     a{
-        font-family: $fuente-principalcolor;
+        font-family: $fuente-principal;
                     text-decoration: none;
                     color: black;
                     font-size: 1.25rem;
@@ -15,11 +23,10 @@ li{
         list-style: none;
     }
 }
-
 .navbar-nav {
     .nav-item {
         .nav-link {
-            padding: 1.5625rem;
+            padding: 25px;
         }
     }
 }

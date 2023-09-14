@@ -8,6 +8,11 @@
 
 /*3ero llamamos a los layout*/
 /*Modificaciones realizadas en barra de navegacion con bootstrap */
+header .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  text-align: center; }
+
 .nav-item a {
   font-family: "Archivo", sans-serif;
   text-decoration: none;
@@ -20,7 +25,91 @@ li img {
   list-style: none; }
 
 .navbar-nav .nav-item .nav-link {
-  padding: 1.5625rem; }
+  padding: 25px; }
+
+/*Modificaciones carrucel de bootstrap */
+main .carousel-inner .d-block {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+.carousel-item {
+  height: 100vh;
+  min-height: 18.75rem; }
+  .carousel-item .carousel-caption {
+    bottom: 13.75rem;
+    z-index: 2; }
+    .carousel-item .carousel-caption h1 {
+      font-size: 9.375rem;
+      text-transform: uppercase; }
 
 /*4to llamamos a los componentes*/
 /*5to a los media querrys */
+@media screen and (max-width: 1024px) {
+  header {
+    justify-content: space-between;
+    align-items: center; }
+  main .carousel-inner .d-block {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  .carousel-item {
+    height: 100vh;
+    min-height: 18.75rem; }
+    .carousel-item .carousel-caption {
+      bottom: 13.75rem;
+      z-index: 2; }
+      .carousel-item .carousel-caption h1 {
+        font-size: 6.25rem;
+        text-transform: uppercase; } }
+
+@media screen and (max-width: 48rem) {
+  header {
+    justify-content: space-between;
+    align-items: center; }
+  main .carousel-inner .d-block {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  .carousel-item {
+    height: 100vh;
+    min-height: 18.75rem; }
+    .carousel-item .carousel-caption {
+      bottom: 13.75rem;
+      z-index: 2; }
+      .carousel-item .carousel-caption h1 {
+        font-size: 100px;
+        text-transform: uppercase; } }
+
+@media screen and (max-width: 30rem) {
+  header {
+    justify-content: space-between;
+    align-items: center; }
+  main .carousel-inner .d-block {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  main .carousel-inner .carousel-item {
+    height: 100vh;
+    min-height: 18.75rem; }
+    main .carousel-inner .carousel-item .carousel-caption {
+      bottom: 13.75rem;
+      z-index: 2; }
+      main .carousel-inner .carousel-item .carousel-caption h1 {
+        font-size: 100px;
+        text-transform: uppercase; } }
+
+@media screen and (max-width: 320px) {
+  main .carousel-inner .d-block {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  main .carousel-inner .carousel-item {
+    height: 100vh;
+    min-height: 18.75rem; }
+    main .carousel-inner .carousel-item .carousel-caption {
+      bottom: 13.75rem;
+      z-index: 2; }
+      main .carousel-inner .carousel-item .carousel-caption h1 {
+        font-size: 50px;
+        text-transform: uppercase; } }
