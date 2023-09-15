@@ -29,4 +29,35 @@
             }
         }
     }
+    .novedades-ayuda-redes{
+        width: 100%;
+        gap: .625rem;
+        display: block;
+        
+        
+       
+
+        .sectionAyuda {
+          h3 {
+            a{
+                font-size: .9375rem;
+                padding-top: 20px;
+              
+                width: 100%;
+            }
+        }
+    }
+}
+.productos {
+    width: 100%;
+
+}
+.redes {
+    width: 100%;
+    margin-top: 12.5rem;
+    text-align: center;
+    p {
+        font-size: .9375rem;
+    }
+}
 }

@@ -1,0 +1,192 @@
+/*Modificaciones carrucel de bootstrap */
+main {
+  .carousel-inner {
+    .d-block {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.carousel-item {
+  height: 100vh;
+  min-height: 18.75rem;
+
+  .carousel-caption {
+    bottom: 13.75rem;
+    z-index: 2;
+
+    h1 {
+      font-size: 9.375rem;
+      text-transform: uppercase;
+    }
+  }
+ 
+}
+.mx-auto:hover {
+  background-color: beige;
+  transition: background-color 2s;
+ }
+.sectionProductos {
+ @include flex (center,center);
+ h2 {
+      font-family: $fuente-principal ;
+      text-align: center;
+      font-size: 1.875rem;
+      margin: 2.5rem 0;
+      padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+      a{
+        text-decoration: none;
+        color: $color-fuentes;
+        font-family: $fuente-principal ;
+        letter-spacing: 5px;
+
+      }
+  }
+  }
+  .productos {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+  }
+
+  .card-productos{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .625rem;
+    overflow: hidden;
+    h3 {
+      a{
+        font-family: $fuente-principal;
+        font-size: 1.25rem;
+        text-decoration: none;
+        color: $color-fuentes;
+        letter-spacing: .3125rem
+      }
+    }
+}
+
+.titulo-recomendados{
+  @include flex(center,center);
+
+ h2 {
+      font-family: $fuente-principal ;
+      text-align: center;
+      font-size: 1.875rem;
+      margin: 2.5rem 0;
+      padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+      color: $color-fuentes;
+        letter-spacing: 5px;
+
+  
+  }
+  
+    }
+    .cards-recomendados{
+      @include grid (repeat(4,1fr),"uno dos tres cuatro cinco " );
+      justify-content: center;
+      display: grid;
+      width: 100%;
+      height: 25rem;
+      column-gap: 1.25rem;
+      img {
+        width: 100%;
+        height: 18.75rem;
+      }
+        h3 {
+        font-family: $fuente-principal;
+        color: $color-fuentes;
+        letter-spacing: .3125rem;
+        font-size: 1.25rem;
+        text-align: center;
+        margin: 50px;
+    }
+    .uno{
+      background-color:#D9D9D9;
+      grid-area: uno;
+    }
+    .dos{
+      background-color: #D9D9D9;
+      grid-area: dos;
+    }
+    .tres{
+      background-color:#D9D9D9;
+      grid-area: tres;
+    }
+    .cuatro{
+      background-color: #D9D9D9;
+      grid-area: cuatro;
+    }
+    .cinco{
+      background-color: #D9D9D9;
+      grid-area:cinco;
+    }
+  }
+
+  .whatsApp {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+  }
+
+  .container {
+    width: 100%;
+        align-items: center;
+        background-color: white;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      
+      }
+        .novedades-ayuda-redes{
+          width: 100%;
+          height: 18.75rem;
+          display: flex;
+          gap: 15.625rem;
+          justify-content: center;
+          margin-top: 100px;
+          align-items: center;
+          flex-direction: row;
+
+          .sectionAyuda {
+            h3 {
+              a{
+                text-decoration: none;
+                color: $color-fuentes;
+                font-family: $fuente-principal;
+                font-size: 20px;
+                border: .0625rem solid (0,0,0,0,161) ;
+              }
+            }
+          }
+          .info 
+          h2 {
+            font-family: $fuente-principal;
+            font-size: 20px;
+            color: $color-fuentes;
+            align-items: center;
+            display: flex;
+            
+        }
+        .completarnovedades {
+          width: 260px;
+          border: .625rem;
+          border-bottom: #000 1px solid;
+          background: white;
+          font-size: 1.25rem;
+          color:$color-fuentes;
+          padding: 10px 10px 10px 10px;
+      }
+      .boton {
+
+        padding: .625rem .625rem .625rem .625rem;
+        margin-top: .625rem;
+        text-align: center;
+      
+      }
+    }

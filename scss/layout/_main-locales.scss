@@ -1,0 +1,14 @@
+.card {
+   padding-left: 1.875rem
+}
+
+.card-body {
+    background-color: $color-fuentes;
+    .card-text {
+        p {
+            font-family: $fuente-principal;
+            color: $color-fuentes-principal;
+            letter-spacing: .3125rem;
+        }
+    }
+}

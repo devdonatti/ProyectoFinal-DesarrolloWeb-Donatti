@@ -1,0 +1,14 @@
+.container-fluid  {
+    justify-content: center;
+    gap: 1.25rem;
+    .card-body {
+        background-color: $color-fuentes-principal;
+    }
+
+}
+
+.card {
+   width: 18.75rem;
+   height: 400px;
+   
+}

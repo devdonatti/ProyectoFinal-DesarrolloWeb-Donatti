@@ -2,6 +2,7 @@
 /*1ero llamamos variables y los mixins*/
 @import"./base/typo";
 @import"./utilities/variables";
+@import"./utilities/mixins.scss";
 
 /*2do llamamos al reset*/
 
@@ -9,7 +10,16 @@
 
 /*3ero llamamos a los layout*/
 @import"./layout/header";
-@import"./layout/main";
+@import"./layout/main-index";
+@import"./layout/footer";
+@import"./layout/main-productos";
+@import"./layout/main-locales";
+@import"./layout/main-contacto";
+@import"./layout/main-hoodies";
+
+
+
+
 
 
 

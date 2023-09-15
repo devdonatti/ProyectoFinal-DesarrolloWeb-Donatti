@@ -1,0 +1,22 @@
+main {
+    display: flex;
+    display: inline;
+}
+
+.container-contact {
+    justify-content: center;
+    width: 50%;
+    align-content: center;
+    margin-left: 15.625rem;
+}
+h1{
+    font-size: 1.25rem;
+    font-family: $fuente-principal;
+    color: $color-fuentes;
+}
+
+.form-label {
+    font-size: .625rem;
+    font-family: $fuente-principal;
+    color: $color-fuentes;
+}
