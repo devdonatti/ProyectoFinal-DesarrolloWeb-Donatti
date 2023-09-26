@@ -1,4 +1,4 @@
-.container-fluid  {
+/*.container-fluid  {
     justify-content: center;
     gap: 1.25rem;
     .card-body {
@@ -11,4 +11,55 @@
    width: 18.75rem;
    height: 400px;
    
+}
+*/
+.img-item{
+    width: 100%;
+
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    gap: 20px;
+}
+
+.item:hover {
+    box-shadow: 0 10px 1.25rem rgba(0, 0, 0, 0.20);
+}
+.info-producto{
+    padding: .9375rem 1.875rem;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+}
+.info-producto h2{
+    margin: .625rem;
+}
+.info-producto p {
+    font-size: 18px;
+}
+
+.info-producto button {
+    border: none;
+    background: none;
+    background-color: black;
+    color: white;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+.item img{
+    object-fit: cover;
+    transition: all .5s;
+    width: 100%;
+    height: 18.75rem;
+}
+.item figure {
+    overflow: hidden;
+}
+
+.item:hover img {
+    transform: scale(1.2);
 }

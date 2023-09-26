@@ -2,7 +2,7 @@
 /*1ero llamamos variables y los mixins*/
 @import"./base/typo";
 @import"./utilities/variables";
-@import"./utilities/mixins.scss";
+@import"./utilities/mixins";
 
 /*2do llamamos al reset*/
 
@@ -17,19 +17,15 @@
 @import"./layout/main-contacto";
 @import"./layout/main-hoodies";
 
-
-
-
-
-
-
-
 /*4to llamamos a los componentes*/
 @import"./components/cards";
 
 /*5to a los media querrys */
 
-@import "./layout/media/media1024";
-@import "./layout/media/media768";
-@import "./layout/media/media480";
+
+
+
 @import "./layout/media/media320";
+@import "./layout/media/media480";
+@import "./layout/media/media768";
+@import "./layout/media/media1024";

@@ -25,19 +25,6 @@ main {
           }
       }
     }
-    .novedades-ayuda-redes{
-      width: 100%;
-     
-
-      .sectionAyuda {
-        h3 {
-          a{
-            
-              width: 100%;
-          }
-      }
-  }
-}
 .productos {
   width: 100%;
 }
@@ -46,4 +33,27 @@ main {
   margin-top: 12.5rem;
   text-align: center;
 }
+.novedades-ayuda-redes{
+  width: 100%;
+  gap: .625rem;
+  display: block;
+  text-align: center;
+  
+  
+ 
+
+  .sectionAyuda {
+    margin-top: 1.25rem;
+    h3 {
+      a{
+       
+          font-size: .9375rem;
+          padding-top: 20px;
+          width: 100%;
+          text-align: center;
+      }
+  }
+}
+}
+
 }

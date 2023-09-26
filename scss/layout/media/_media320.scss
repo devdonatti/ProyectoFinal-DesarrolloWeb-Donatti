@@ -26,17 +26,26 @@
     }
     .novedades-ayuda-redes{
         width: 100%;
+        gap: .625rem;
+        display: block;
+        text-align: center;
+        
+        
        
-
+      
         .sectionAyuda {
+          margin-top: 1.25rem;
           h3 {
             a{
-              
+             
+                font-size: .9375rem;
+                padding-top: 20px;
                 width: 100%;
+                text-align: center;
             }
         }
-    }
-}
+      }
+      }
 .productos {
     width: 100%;
 }

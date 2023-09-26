@@ -41,10 +41,12 @@ main .carousel-inner .d-block {
     z-index: 2; }
     .carousel-item .carousel-caption h1 {
       font-size: 9.375rem;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      color: white;
+      text-align: center; }
 
 .mx-auto:hover {
-  background-color: beige;
+  background-color: rgba(0, 0, 0, 0.2);
   transition: background-color 2s; }
 
 .sectionProductos {
@@ -85,60 +87,45 @@ main .carousel-inner .d-block {
     color: black;
     letter-spacing: .3125rem; }
 
-.titulo-recomendados {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .titulo-recomendados h2 {
-    font-family: "Archivo", sans-serif;
-    text-align: center;
-    font-size: 1.875rem;
-    margin: 2.5rem 0;
-    padding: 0.625rem 0.625rem 0.625rem 0.625rem;
-    color: black;
-    letter-spacing: 5px; }
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0; }
 
-.cards-recomendados {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "uno dos tres cuatro cinco ";
+.contenedor-cards {
+  display: flex;
+  gap: 1.25rem;
   justify-content: center;
-  display: grid;
-  width: 100%;
-  height: 25rem;
-  column-gap: 1.25rem; }
-  .cards-recomendados img {
-    width: 100%;
-    height: 18.75rem; }
-  .cards-recomendados h3 {
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center; }
+  .contenedor-cards img {
+    width: 15rem;
+    height: 23.5rem; }
+  .contenedor-cards .textos h3 {
     font-family: "Archivo", sans-serif;
-    color: black;
-    letter-spacing: .3125rem;
     font-size: 1.25rem;
-    text-align: center;
-    margin: 50px; }
-  .cards-recomendados .uno {
-    background-color: #D9D9D9;
-    grid-area: uno; }
-  .cards-recomendados .dos {
-    background-color: #D9D9D9;
-    grid-area: dos; }
-  .cards-recomendados .tres {
-    background-color: #D9D9D9;
-    grid-area: tres; }
-  .cards-recomendados .cuatro {
-    background-color: #D9D9D9;
-    grid-area: cuatro; }
-  .cards-recomendados .cinco {
-    background-color: #D9D9D9;
-    grid-area: cinco; }
+    text-decoration: none;
+    color: black;
+    letter-spacing: .1875rem;
+    padding: .625rem; }
+
+.tittle-recomendados {
+  font-family: "Archivo", sans-serif;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: black;
+  letter-spacing: .3125rem;
+  text-align: center;
+  margin: 2.5rem; }
 
 .whatsApp {
   position: fixed;
   right: 1.25rem;
   bottom: 1.25rem; }
 
-.container {
+.container-main {
   width: 100%;
   align-items: center;
   background-color: white;
@@ -155,19 +142,20 @@ main .carousel-inner .d-block {
   margin-top: 100px;
   align-items: center;
   flex-direction: row; }
-  .novedades-ayuda-redes .sectionAyuda h3 a {
-    text-decoration: none;
-    color: black;
-    font-family: "Archivo", sans-serif;
-    font-size: 20px;
-    border: 0.0625rem solid 0, 0, 0, 0, 161; }
+  .novedades-ayuda-redes .sectionAyuda {
+    margin-top: 2.5rem; }
+    .novedades-ayuda-redes .sectionAyuda h3 a {
+      text-decoration: none;
+      color: black;
+      font-family: "Archivo", sans-serif;
+      font-size: 20px;
+      border: 0.0625rem solid 0, 0, 0, 0, 161; }
   .novedades-ayuda-redes .info
 h2 {
     font-family: "Archivo", sans-serif;
     font-size: 20px;
     color: black;
-    align-items: center;
-    display: flex; }
+    align-items: center; }
   .novedades-ayuda-redes .completarnovedades {
     width: 260px;
     border: .625rem;
@@ -216,15 +204,100 @@ h2 {
     color: black;
     letter-spacing: .3125rem; }
 
-.card {
-  padding-left: 1.875rem; }
+.container-main {
+  width: 100%;
+  align-items: center;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
-.card-body {
-  background-color: black; }
-  .card-body .card-text p {
+.novedades-ayuda-redes {
+  width: 100%;
+  height: 18.75rem;
+  display: flex;
+  gap: 15.625rem;
+  justify-content: center;
+  margin-top: 100px;
+  align-items: center;
+  flex-direction: row; }
+  .novedades-ayuda-redes .sectionAyuda {
+    margin-top: 2.5rem; }
+    .novedades-ayuda-redes .sectionAyuda h3 a {
+      text-decoration: none;
+      color: black;
+      font-family: "Archivo", sans-serif;
+      font-size: 20px;
+      border: 0.0625rem solid 0, 0, 0, 0, 161; }
+  .novedades-ayuda-redes .info
+h2 {
     font-family: "Archivo", sans-serif;
-    color: white;
+    font-size: 20px;
+    color: black;
+    align-items: center; }
+  .novedades-ayuda-redes .completarnovedades {
+    width: 260px;
+    border: .625rem;
+    border-bottom: #000 1px solid;
+    background: white;
+    font-size: 1.25rem;
+    color: black;
+    padding: 10px 10px 10px 10px; }
+  .novedades-ayuda-redes .boton {
+    padding: .625rem .625rem .625rem .625rem;
+    margin-top: .625rem;
+    text-align: center; }
+
+.sectionProductos {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .sectionProductos h2 {
+    font-family: "Archivo", sans-serif;
+    text-align: center;
+    font-size: 1.875rem;
+    margin: 2.5rem 0;
+    padding: 0.625rem 0.625rem 0.625rem 0.625rem; }
+    .sectionProductos h2 a {
+      text-decoration: none;
+      color: black;
+      font-family: "Archivo", sans-serif;
+      letter-spacing: 5px; }
+
+.productos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center; }
+
+.card-productos {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: .625rem;
+  overflow: hidden; }
+  .card-productos h3 a {
+    font-family: "Archivo", sans-serif;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: black;
     letter-spacing: .3125rem; }
+
+.container-locales {
+  width: 100%;
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px;
+  justify-content: center; }
+
+.info-local {
+  background-color: black; }
+  .info-local p {
+    color: white;
+    padding: .625rem; }
 
 main {
   display: flex;
@@ -246,18 +319,209 @@ h1 {
   font-family: "Archivo", sans-serif;
   color: black; }
 
-.container-fluid {
-  justify-content: center;
-  gap: 1.25rem; }
-  .container-fluid .card-body {
-    background-color: white; }
+/*.container-fluid  {
+    justify-content: center;
+    gap: 1.25rem;
+    .card-body {
+        background-color: $color-fuentes-principal;
+    }
+
+}
 
 .card {
-  width: 18.75rem;
-  height: 400px; }
+   width: 18.75rem;
+   height: 400px;
+   
+}
+*/
+.img-item {
+  width: 100%; }
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px; }
+
+.item:hover {
+  box-shadow: 0 10px 1.25rem rgba(0, 0, 0, 0.2); }
+
+.info-producto {
+  padding: .9375rem 1.875rem;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  gap: .625rem; }
+
+.info-producto h2 {
+  margin: .625rem; }
+
+.info-producto p {
+  font-size: 18px; }
+
+.info-producto button {
+  border: none;
+  background: none;
+  background-color: black;
+  color: white;
+  padding: 15px 10px;
+  cursor: pointer; }
+
+.item img {
+  object-fit: cover;
+  transition: all .5s;
+  width: 100%;
+  height: 18.75rem; }
+
+.item figure {
+  overflow: hidden; }
+
+.item:hover img {
+  transform: scale(1.2); }
 
 /*4to llamamos a los componentes*/
 /*5to a los media querrys */
+@media screen and (max-width: 320px) {
+  main .carousel-inner .d-block {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  main .carousel-inner .carousel-item {
+    height: 100vh;
+    min-height: 18.75rem; }
+    main .carousel-inner .carousel-item .carousel-caption {
+      bottom: 13.75rem;
+      z-index: 2; }
+      main .carousel-inner .carousel-item .carousel-caption h1 {
+        font-size: 50px;
+        text-transform: uppercase; }
+  .novedades-ayuda-redes {
+    width: 100%;
+    gap: .625rem;
+    display: block;
+    text-align: center; }
+    .novedades-ayuda-redes .sectionAyuda {
+      margin-top: 1.25rem; }
+      .novedades-ayuda-redes .sectionAyuda h3 a {
+        font-size: .9375rem;
+        padding-top: 20px;
+        width: 100%;
+        text-align: center; }
+  .productos {
+    width: 100%; }
+  .redes {
+    width: 100%;
+    margin-top: 12.5rem;
+    text-align: center; } }
+
+@media screen and (max-width: 30rem) {
+  header {
+    justify-content: space-between;
+    align-items: center; }
+  main .carousel-inner .d-block {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  main .carousel-inner .carousel-item {
+    height: 100vh;
+    min-height: 18.75rem; }
+    main .carousel-inner .carousel-item .carousel-caption {
+      bottom: 13.75rem;
+      z-index: 2; }
+      main .carousel-inner .carousel-item .carousel-caption h1 {
+        font-size: 100px;
+        text-transform: uppercase; }
+  .productos {
+    width: 100%; }
+  .redes {
+    width: 100%;
+    margin-top: 12.5rem;
+    text-align: center; }
+  .novedades-ayuda-redes {
+    width: 100%;
+    gap: .625rem;
+    display: block;
+    text-align: center; }
+    .novedades-ayuda-redes .sectionAyuda {
+      margin-top: 1.25rem; }
+      .novedades-ayuda-redes .sectionAyuda h3 a {
+        font-size: .9375rem;
+        padding-top: 20px;
+        width: 100%;
+        text-align: center; } }
+
+@media screen and (max-width: 48rem) {
+  header {
+    justify-content: space-between;
+    align-items: center; }
+  main .carousel-inner .d-block {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  .body {
+    text-align: center; }
+  .carousel-item {
+    height: 100vh;
+    min-height: 18.75rem; }
+    .carousel-item .carousel-caption {
+      bottom: 13.75rem;
+      z-index: 2; }
+      .carousel-item .carousel-caption h1 {
+        font-size: 100px;
+        text-transform: uppercase; }
+  .novedades-ayuda-redes {
+    width: 100%;
+    gap: .625rem;
+    display: block;
+    text-align: center; }
+    .novedades-ayuda-redes .sectionAyuda {
+      margin-top: 1.25rem; }
+      .novedades-ayuda-redes .sectionAyuda h3 a {
+        font-size: .9375rem;
+        padding-top: 20px;
+        width: 100%;
+        text-align: center; }
+  .productos {
+    width: 100%; }
+  .redes {
+    width: 100%;
+    margin-top: 12.5rem;
+    text-align: center; }
+    .redes p {
+      font-size: .9375rem; }
+  .container-contact {
+    justify-content: center;
+    width: 100%;
+    align-content: center;
+    margin-left: .9375rem; }
+  .cards-recomendados {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "  uno dos tres cuatro cinco ";
+    justify-content: center;
+    width: 100%;
+    height: 25rem;
+    column-gap: 1.25rem; }
+    .cards-recomendados img {
+      width: 100%;
+      height: 18.75rem; }
+    .cards-recomendados h3 {
+      font-family: "Archivo", sans-serif;
+      color: black;
+      letter-spacing: .3125rem;
+      font-size: 1.25rem;
+      text-align: center;
+      margin: 50px; }
+  .tres {
+    background-color: #D9D9D9;
+    grid-area: tres; }
+  .cuatro {
+    background-color: #D9D9D9;
+    grid-area: cuatro; }
+  .cinco {
+    background-color: #D9D9D9;
+    grid-area: cinco; } }
+
 @media screen and (max-width: 1024px) {
   header {
     justify-content: space-between;
@@ -278,93 +542,6 @@ h1 {
   .novedades-ayuda-redes {
     width: 100%;
     gap: 3.125rem; }
-    .novedades-ayuda-redes .sectionAyuda h3 a {
-      width: 100%; }
-  .productos {
-    width: 100%; }
-  .redes {
-    width: 100%;
-    margin-top: 12.5rem;
-    text-align: center; } }
-
-@media screen and (max-width: 48rem) {
-  header {
-    justify-content: space-between;
-    align-items: center; }
-  main .carousel-inner .d-block {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; }
-  .carousel-item {
-    height: 100vh;
-    min-height: 18.75rem; }
-    .carousel-item .carousel-caption {
-      bottom: 13.75rem;
-      z-index: 2; }
-      .carousel-item .carousel-caption h1 {
-        font-size: 100px;
-        text-transform: uppercase; }
-  .novedades-ayuda-redes {
-    width: 100%;
-    gap: .625rem;
-    display: block; }
-    .novedades-ayuda-redes .sectionAyuda h3 a {
-      font-size: .9375rem;
-      padding-top: 20px;
-      width: 100%; }
-  .productos {
-    width: 100%; }
-  .redes {
-    width: 100%;
-    margin-top: 12.5rem;
-    text-align: center; }
-    .redes p {
-      font-size: .9375rem; } }
-
-@media screen and (max-width: 30rem) {
-  header {
-    justify-content: space-between;
-    align-items: center; }
-  main .carousel-inner .d-block {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; }
-  main .carousel-inner .carousel-item {
-    height: 100vh;
-    min-height: 18.75rem; }
-    main .carousel-inner .carousel-item .carousel-caption {
-      bottom: 13.75rem;
-      z-index: 2; }
-      main .carousel-inner .carousel-item .carousel-caption h1 {
-        font-size: 100px;
-        text-transform: uppercase; }
-  .novedades-ayuda-redes {
-    width: 100%; }
-    .novedades-ayuda-redes .sectionAyuda h3 a {
-      width: 100%; }
-  .productos {
-    width: 100%; }
-  .redes {
-    width: 100%;
-    margin-top: 12.5rem;
-    text-align: center; } }
-
-@media screen and (max-width: 320px) {
-  main .carousel-inner .d-block {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; }
-  main .carousel-inner .carousel-item {
-    height: 100vh;
-    min-height: 18.75rem; }
-    main .carousel-inner .carousel-item .carousel-caption {
-      bottom: 13.75rem;
-      z-index: 2; }
-      main .carousel-inner .carousel-item .carousel-caption h1 {
-        font-size: 50px;
-        text-transform: uppercase; }
-  .novedades-ayuda-redes {
-    width: 100%; }
     .novedades-ayuda-redes .sectionAyuda h3 a {
       width: 100%; }
   .productos {
